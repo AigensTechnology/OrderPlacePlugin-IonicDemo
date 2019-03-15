@@ -6,6 +6,25 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
+  <div class="close-button" [ngClass]="{myMove: Abounce}">
+    <button (click)="close()">
+      <ion-icon name="ios-close"></ion-icon>
+    </button>
+  </div>
+
+  <div class="img">
+    <img src="assets/imgs/ad_banner.jpg" alt="">
+  </div>
+
+  <div class="text-label">
+    <div class="title-label">
+      <ion-icon name="arrow-forward"></ion-icon>
+      <label>我的標題</label>
+    </div>
+    <label class="sub-title">我是副標題</label>
+    <label>我是描述..................我是描述..................我是描述..................我是描述..................我是描述..................我是描述..................我是描述..................我是描述..................我是描述..................我是描述..................fd
+      fds fdsf fds fds fds love love love love love love love.</label>
+  </div>
 </ion-content>

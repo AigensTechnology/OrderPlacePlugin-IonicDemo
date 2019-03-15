@@ -1,3 +1,133 @@
 page-home {
-
+    --font-size: 2rem;
+    @mixin circle($size: 100px, $color:lightblue) {
+        width: $size;
+        height: $size;
+        border-radius: $size/2;
+        background: $color;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+        background-color: #2fa434;
+        flex-flow: wrap;
+        .flex-colum {
+            width: 9.5rem;
+            height: 9.5rem;
+            background-color: #435343;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 3rem;
+        }
+    }
+    .flex2 {
+        display: flex;
+        margin: 1rem 0;
+        align-items: center;
+        background-color: #4f4;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 1rem 1rem 1rem #888888;
+        border-radius: 1rem;
+        .left {
+            width: 5rem;
+            padding: 0 1rem;
+            text-align: left;
+        }
+        .left::before {
+            content: "前-"
+        }
+        .flex3 {
+            display: flex;
+            flex-direction: column;
+        }
+        .right {
+            width: 5rem;
+            align-self: center;
+        }
+        .right::after {
+            content: "-後"
+        }
+    }
+    .float {
+        button {
+            // width: 3rem;
+            // height: 3rem; // border-radius: 1.5rem;
+            position: absolute;
+            top: 45%;
+            left: calc((92%-4rem)*0.5);
+            font-size: var(--font-size);
+            @include circle(4rem, #452345);
+            background-color: red;
+            &.activated {
+                background-color: yellow;
+            }
+        }
+    }
+    .animate {
+        position: absolute;
+        animation: myMove 5s infinite;
+    }
+    @media (min-width: 400px) {
+        // background-color: #2fa434;
+        ion-content {
+            background: url(../../assets/imgs/bg.png) repeat fixed center;
+        }
+    }
+    @keyframes myMove {
+        0% {
+            top: 0px;
+            transform: none
+        }
+        25% {
+            top: 200px; // transform: scale(1.1, 1.1);
+            // transform: rotate(90deg);
+        }
+        50% {
+            top: 100px;
+            margin-left: 20%;
+            margin-top: 10%;
+            transform: scale(2.1, 2.1);
+            transform: rotate(180deg);
+        }
+        75% {
+            top: 200px; // transform: scale(1.1, 1.1);
+            // transform: rotate(90deg);
+        }
+        100% {
+            top: 0px;
+            transform: none;
+        }
+    }
+    @keyframes bounce {
+        from,
+        20%,
+        53%,
+        80%,
+        to {
+            -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        40%,
+        43% {
+            -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            -webkit-transform: translate3d(0, -30px, 0);
+            transform: translate3d(0, -30px, 0);
+        }
+        70% {
+            -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+        }
+        90% {
+            -webkit-transform: translate3d(0, -4px, 0);
+            transform: translate3d(0, -4px, 0);
+        }
+    }
 }

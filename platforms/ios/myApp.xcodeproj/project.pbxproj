@@ -12,7 +12,6 @@
 		052D0FA027704D09B346053F /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B3883170807A426AB7FFC52A /* GCDWebServerDataResponse.m */; };
 		0554A78CF94E4BEB8292158B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2EF0F109FC4C1F9AC638CF /* Foundation.framework */; };
 		0D0B59CF63AD4F2CB74B2D3D /* IONAssetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F340C3626D643F5AD26D539 /* IONAssetHandler.m */; };
-		0DE2CE1367CC4B3E900ECE0C /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2865BA42E94D7C997B0394 /* PassKit.framework */; };
 		17E0EFBB472649868B2A3892 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3AC6FD36274FFA89349D75 /* QuartzCore.framework */; };
 		1AC964D039CC4AE5BA359BFE /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FB641B46F94B46DDA53DCB63 /* GCDWebServerRequest.m */; };
 		1BB0D47C7B1B4672A12ECFF2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511075385B8F41C8BFBC5BA2 /* AVFoundation.framework */; };
@@ -31,6 +30,11 @@
 		4630DFCE67F342DE8DEC6A42 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E135D61421224208AD5D1EF9 /* AlipaySDK.framework */; };
 		485B91F89F17478C93806EE7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0701E9562F4F93B5A72A6D /* libz.tbd */; };
 		4E290B1677864BA398A2650D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AC66430C614F36B6656CDF /* SystemConfiguration.framework */; };
+		526EDF822239ECC40048A267 /* OrderPlaceWechatPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDF802239ECB40048A267 /* OrderPlaceWechatPaySDK.framework */; };
+		526EDF832239ECC40048A267 /* OrderPlaceWechatPaySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDF802239ECB40048A267 /* OrderPlaceWechatPaySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		526EDF852239EDFF0048A267 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDF842239EDFF0048A267 /* Security.framework */; };
+		526EDF872239EE130048A267 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDF862239EE130048A267 /* libsqlite3.0.tbd */; };
+		526EDF892239EF2A0048A267 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 526EDF882239EF290048A267 /* libWeChatSDK.a */; };
 		52CD630321FEE85400E6AA1D /* OrderPlaceAlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46C5B5B31574902A5146FF7 /* OrderPlaceAlipaySDK.framework */; };
 		52CD630421FEE85400E6AA1D /* OrderPlaceAlipaySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B46C5B5B31574902A5146FF7 /* OrderPlaceAlipaySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52CD630521FEE85400E6AA1D /* OrderPlaceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CE4D987D344C99A965E68F /* OrderPlaceSDK.framework */; };
@@ -91,6 +95,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				52CD630621FEE85400E6AA1D /* OrderPlaceSDK.framework in Embed Frameworks */,
+				526EDF832239ECC40048A267 /* OrderPlaceWechatPaySDK.framework in Embed Frameworks */,
 				52CD630421FEE85400E6AA1D /* OrderPlaceAlipaySDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -129,6 +134,10 @@
 		510409E3076D45A49DDBF6E5 /* CFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		511075385B8F41C8BFBC5BA2 /* AVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		51369C9F691D4B0BACF5C2EE /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = "cordova-plugin-ionic-webview/GCDWebServerURLEncodedFormRequest.m"; sourceTree = "<group>"; };
+		526EDF802239ECB40048A267 /* OrderPlaceWechatPaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OrderPlaceWechatPaySDK.framework; path = "myApp/Plugins/order-place-cordova-plugin/OrderPlaceWechatPaySDK.framework"; sourceTree = "<group>"; };
+		526EDF842239EDFF0048A267 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		526EDF862239EE130048A267 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		526EDF882239EF290048A267 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = "myApp/Plugins/order-place-cordova-plugin/libWeChatSDK.a"; sourceTree = "<group>"; };
 		56F32992A8A1431AA6BED78F /* CDVIonicKeyboard.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVIonicKeyboard.m; path = "cordova-plugin-ionic-keyboard/CDVIonicKeyboard.m"; sourceTree = "<group>"; };
 		575140F676344D03A25B0574 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerResponse.m; path = "cordova-plugin-ionic-webview/GCDWebServerResponse.m"; sourceTree = "<group>"; };
 		5A9224F0246C4B229954C3F8 /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
@@ -136,7 +145,6 @@
 		5F123EF2B443418AAFEC9EF3 /* AddressBook.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		5F494B7F8844432E862489BE /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
 		63D54135F8844F0CB8BC221F /* CDVIonicKeyboard.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVIonicKeyboard.h; path = "cordova-plugin-ionic-keyboard/CDVIonicKeyboard.h"; sourceTree = "<group>"; };
-		6A2865BA42E94D7C997B0394 /* PassKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = myApp/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		6CABC2FB45794C938B30002C /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
 		767CB2A887274015B9A642DC /* GCDWebServer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = "cordova-plugin-ionic-webview/GCDWebServer.h"; sourceTree = "<group>"; };
@@ -193,22 +201,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63370170D1764DBE8DDD55DA /* libc++.tbd in Frameworks */,
+				526EDF872239EE130048A267 /* libsqlite3.0.tbd in Frameworks */,
+				7EE0D0274B964DD0BE0A3D18 /* CFNetwork.framework in Frameworks */,
+				C5A3535CD60047C58AB67A18 /* CoreTelephony.framework in Frameworks */,
+				526EDF852239EDFF0048A267 /* Security.framework in Frameworks */,
+				4E290B1677864BA398A2650D /* SystemConfiguration.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				31A962E1E6FA46AB8C89DD1C /* WebKit.framework in Frameworks */,
 				52CD630521FEE85400E6AA1D /* OrderPlaceSDK.framework in Frameworks */,
 				485B91F89F17478C93806EE7 /* libz.tbd in Frameworks */,
-				63370170D1764DBE8DDD55DA /* libc++.tbd in Frameworks */,
-				4E290B1677864BA398A2650D /* SystemConfiguration.framework in Frameworks */,
-				C5A3535CD60047C58AB67A18 /* CoreTelephony.framework in Frameworks */,
+				526EDF822239ECC40048A267 /* OrderPlaceWechatPaySDK.framework in Frameworks */,
 				17E0EFBB472649868B2A3892 /* QuartzCore.framework in Frameworks */,
 				FD943BA52F634F53867FF699 /* CoreText.framework in Frameworks */,
 				4589CDAC1D314891A4FD0090 /* UIKit.framework in Frameworks */,
+				526EDF892239EF2A0048A267 /* libWeChatSDK.a in Frameworks */,
 				0554A78CF94E4BEB8292158B /* Foundation.framework in Frameworks */,
-				7EE0D0274B964DD0BE0A3D18 /* CFNetwork.framework in Frameworks */,
 				E137CCFBB350412E86DC509D /* CoreMotion.framework in Frameworks */,
 				52CD630321FEE85400E6AA1D /* OrderPlaceAlipaySDK.framework in Frameworks */,
 				1BB0D47C7B1B4672A12ECFF2 /* AVFoundation.framework in Frameworks */,
-				0DE2CE1367CC4B3E900ECE0C /* PassKit.framework in Frameworks */,
 				4630DFCE67F342DE8DEC6A42 /* AlipaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +292,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				526EDF882239EF290048A267 /* libWeChatSDK.a */,
+				526EDF862239EE130048A267 /* libsqlite3.0.tbd */,
+				526EDF842239EDFF0048A267 /* Security.framework */,
+				526EDF802239ECB40048A267 /* OrderPlaceWechatPaySDK.framework */,
 				A6AAFAF1F2644816A77D72D7 /* WebKit.framework */,
 				7B0701E9562F4F93B5A72A6D /* libz.tbd */,
 				DC88A6ADA1C74A1391F74C7A /* libc++.tbd */,
@@ -293,7 +308,6 @@
 				510409E3076D45A49DDBF6E5 /* CFNetwork.framework */,
 				3946FB774882435792865B9D /* CoreMotion.framework */,
 				511075385B8F41C8BFBC5BA2 /* AVFoundation.framework */,
-				6A2865BA42E94D7C997B0394 /* PassKit.framework */,
 				5F123EF2B443418AAFEC9EF3 /* AddressBook.framework */,
 				E135D61421224208AD5D1EF9 /* AlipaySDK.framework */,
 				B46C5B5B31574902A5146FF7 /* OrderPlaceAlipaySDK.framework */,
@@ -399,6 +413,7 @@
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				52CD630721FEE85400E6AA1D /* Embed Frameworks */,
+				526EDF8A2239F16D0048A267 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -420,9 +435,19 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 36RXHYW79N;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplePay = {
 								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+							com.apple.Wallet = {
+								enabled = 0;
 							};
 						};
 					};
@@ -494,7 +519,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js\n";
+			showEnvVarsInLog = 0;
+		};
+		526EDF8A2239F16D0048A267 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -554,8 +597,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 36RXHYW79N;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"myApp/Plugins/order-place-cordova-plugin",
@@ -572,9 +617,15 @@
 				INFOPLIST_FILE = "myApp/myApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/myApp/Plugins/order-place-cordova-plugin",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoshinoyahk.ios;
 				PRODUCT_NAME = myApp;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -588,8 +639,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = 36RXHYW79N;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"myApp/Plugins/order-place-cordova-plugin",
@@ -604,9 +657,15 @@
 				INFOPLIST_FILE = "myApp/myApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/myApp/Plugins/order-place-cordova-plugin",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yoshinoyahk.ios;
 				PRODUCT_NAME = myApp;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

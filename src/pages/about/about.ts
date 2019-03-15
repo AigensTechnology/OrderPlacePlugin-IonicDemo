@@ -6,9 +6,14 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'about.html'
 })
 export class AboutPage {
-
+  Abounce = false;
   constructor(public navCtrl: NavController) {
 
   }
 
+  close() { 
+    console.log('close..');
+    
+    this.Abounce = !this.Abounce;
+  }
 }

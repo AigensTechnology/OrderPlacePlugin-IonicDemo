@@ -5,6 +5,56 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <button ion-button (click)="openOP()">Open Order Place</button>
+  <h2 [ngClass]="{animate: clickBtn}" style="position: relative;">Welcome to Ionic!</h2>
+  <button ion-button (click)="clickBtn=!clickBtn">Open Order Place</button>
+  <button ion-button (click)="pushToNext()">push to next</button>
+  <div class="flex">
+    <div class="flex-colum">
+      <div>11111111</div>
+    </div>
+    <div class="flex-colum">
+      <div>2</div>
+    </div>
+    <div class="flex-colum">
+      <div>3</div>
+    </div>
+  </div>
+
+  <div class="flex2">
+    <div class="left">左</div>
+
+    <div class="flex3">
+      <div style="background-color: #435343;">中上</div>
+      <div style="background-color: #2fa434;">中下</div>
+    </div>
+
+    <div class="right">右</div>
+
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        ion-col
+      </ion-col>
+      <ion-col col-3>
+        ion-col
+      </ion-col>
+      <ion-col col-2>
+        ion-col
+      </ion-col>
+      <ion-col col-3>
+        ion-col
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <div class="float" [ngClass]="{animate: clickBtn}">
+      <button ion-button>
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </button>
+    </div>
+
+
 </ion-content>

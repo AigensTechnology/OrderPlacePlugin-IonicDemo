@@ -1,0 +1,43 @@
+{
+  "_from": "git+https://github.com/aigens/order-place-cordova-plugin.git",
+  "_id": "order-place-cordova-plugin@0.1.8",
+  "_inBundle": false,
+  "_location": "/order-place-cordova-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/aigens/order-place-cordova-plugin",
+    "rawSpec": "https://github.com/aigens/order-place-cordova-plugin",
+    "saveSpec": "git+https://github.com/aigens/order-place-cordova-plugin.git",
+    "fetchSpec": "https://github.com/aigens/order-place-cordova-plugin.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/aigens/order-place-cordova-plugin.git#77cb3b40e05c94055036ec56a6c28167b36c43b0",
+  "_spec": "https://github.com/aigens/order-place-cordova-plugin",
+  "_where": "/Users/chenpeijue/Desktop/OrderPlaceDmo/myApp",
+  "author": {
+    "name": "peter.liu@aigens.com"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "order-place-cordova-plugin",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "order-place-cordova-plugin",
+  "version": "0.1.8"
+}
